@@ -1,6 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Typography from '@mui/material/Typography';
+import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
+import CodeIcon from '@mui/icons-material/Code';
 
 export default function Home() {
   return (
@@ -14,7 +17,12 @@ export default function Home() {
       <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
+          <AccessAlarmIcon/>
         </h1>
+        <Typography variant="h5" gutterBottom component="div">
+          With Material Ui V5.5
+        </Typography>
+        <CodeIcon/>
 
         <p className={styles.description}>
           Get started by editing{' '}
